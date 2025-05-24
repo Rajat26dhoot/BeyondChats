@@ -571,7 +571,26 @@ function RightPanel({ onClose, onSendMessage, initialText }) {
   );
 
   return (
-    <aside style={{ width:400, minWidth: 400, maxWidth: 400, borderLeft: '2px solid rgb(228, 228, 228)', height: '100vh', background: 'linear-gradient(to bottom,rgb(242, 245, 252) 0%,rgb(252, 244, 246) 60%,rgb(223, 231, 255) 100%)' , display: 'flex', flexDirection: 'column', position: 'relative', padding: 0, overflow: 'hidden' }}>
+    <aside style={{ 
+      width: 400, 
+      minWidth: 400, 
+      maxWidth: 400, 
+      borderLeft: '2px solid rgb(228, 228, 228)', 
+      height: '100vh', 
+      background: 'linear-gradient(to bottom,rgb(242, 245, 252) 0%,rgb(252, 244, 246) 60%,rgb(223, 231, 255) 100%)', 
+      display: 'flex', 
+      flexDirection: 'column', 
+      position: 'relative', 
+      padding: 0, 
+      overflow: 'hidden',
+      '@media (max-width: 768px)': {
+        width: '100%',
+        minWidth: '100%',
+        maxWidth: '100%',
+        height: '100%',
+        overflow: 'auto'
+      }
+    }}>
       {/* Tab Bar (sticky) */}
       <div style={{ 
         position: 'sticky', 

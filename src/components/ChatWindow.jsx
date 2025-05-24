@@ -256,13 +256,28 @@ function ChatWindow({ showRightPanel, onTogglePanel, chatInputValue, setChatInpu
   };
 
   return (
-    <main style={{ flex: 1, display: 'flex', flexDirection: 'column', height: '100%', background: 'linear-gradient(to bottom,rgb(246, 246, 246) 60%,rgb(246, 246, 246) 100%)', position: 'relative', overflow: 'hidden' }}>
+    <main style={{ 
+      flex: 1, 
+      display: 'flex', 
+      flexDirection: 'column', 
+      height: '100%', 
+      background: 'linear-gradient(to bottom,rgb(246, 246, 246) 60%,rgb(246, 246, 246) 100%)', 
+      position: 'relative', 
+      overflow: 'hidden',
+      '@media (max-width: 768px)': {
+        overflow: 'auto'
+      }
+    }}>
       <div style={{ 
         flex: 1, 
         overflowY: 'auto', 
         minHeight: 0, 
         padding: '2.5rem 2rem',
-        height: 'calc(100% - 65px)' // Account for bottom bar height
+        height: 'calc(100% - 65px)', // Account for bottom bar height
+        '@media (max-width: 768px)': {
+          padding: '1.5rem 1rem',
+          height: 'calc(100% - 120px)' // Adjusted for mobile input box
+        }
       }}>
         {getChatContent()}
       </div>
