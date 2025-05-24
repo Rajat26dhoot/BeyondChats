@@ -198,7 +198,17 @@ function RightPanel({ onClose, onSendMessage, initialText }) {
         </div>
       ) : (
         // Chat UI after sending a message
-        <div style={{ width: '100%', flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'stretch', justifyContent: 'flex-start', padding: '0.7rem 0.3rem 0 0.3rem', minHeight: 0 }}>
+        <div style={{ 
+          width: '100%', 
+          flex: 1, 
+          display: 'flex', 
+          flexDirection: 'column', 
+          alignItems: 'stretch', 
+          justifyContent: 'flex-start', 
+          padding: '0.7rem 0.3rem 0 0.3rem', 
+          minHeight: 0,
+          height: 'calc(100% - 65px)' // Account for bottom bar height
+        }}>
           {/* User message */}
           <div style={{ display: 'flex', alignItems: 'flex-end', marginBottom: 10, paddingLeft: 4 }}>
             <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="User" style={{ width: 24, height: 24, borderRadius: '50%', marginRight: 7 }} />
