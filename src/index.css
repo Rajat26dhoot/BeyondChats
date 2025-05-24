@@ -52,6 +52,8 @@ body {
   color: #000;
 }
 
+
+
 /* Mobile Styles */
 @media (max-width: 768px) {
   .mobile-slide-enter {
@@ -117,25 +119,27 @@ body {
 
   /* Adjust chat window for mobile */
   .chat-window {
-    height: calc(100vh - 56px - 60px - 15px); /* Subtract header, input box height, and 15px shift */
+    height: calc(100vh - 56px - 60px - 65px); /* Subtract header, input box height, and bottom bar */
     overflow-y: auto;
     width: 100%;
-    margin-top: -15px; /* Shift up by 15px */
+    position: relative;
+    padding-bottom: 20px;
   }
 
   /* Adjust right panel for mobile */
   .right-panel {
-    height: 100%; /* Subtract header and input box height */
+    height: calc(100vh - 56px - 60px - 65px); /* Subtract header, input box height, and bottom bar */
     overflow-y: auto;
     width: 100%;
-    margin-top: -15px; /* Shift up by 15px */
+    position: relative;
+    padding-bottom: 20px;
   }
 
   /* Ensure input boxes are fully visible */
   .chat-input-container,
   .chat-input-box {
     position: fixed;
-    bottom: 65px; /* was 50px, now shifted up by 15px */
+    bottom: 65px; /* Bottom bar height */
     left: 0;
     right: 0;
     margin: 0;
@@ -143,6 +147,7 @@ body {
     border-bottom: none;
     background: #fff;
     z-index: 1000;
+    padding: 1rem;
   }
 }
 
