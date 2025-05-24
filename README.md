@@ -1,12 +1,53 @@
-# React + Vite
+# Beyond Chats 💬✨
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Live Demo**: [beyond-chats-black.vercel.app](https://beyond-chats-black.vercel.app/)
 
-Currently, two official plugins are available:
+A fully responsive React + TailwindCSS project inspired by the provided video demo. The app features an AI-powered chat experience, interactive UI elements, and a seamless, modern user interface optimized for usability and performance.
+Use Lusi chat from inbox to you functionality.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 🧠 AI Copilot 
+- Floating AI assistant button
+- Hover to reveal the Copilot activation button.
+- On click, opens a chat panel with predefined prompts.
+- Submitting a prompt generates a predefined AI-generated response.
+
+### 📞 Header Utilities
+- **Call button**: Quick access in the header.
+- **More Actions menu**:
+  - Includes **"Summarize"** option for AI-generated summaries of content.
+
+### 📰 Side Panel (Details View)
+- Displays additional conversation metadata and status.
+- Read/Unread indicators with visual differentiation.
+- Automatically sorts conversations by time.
+
+### 📱 Fully Responsive
+- Optimized for both desktop and mobile devices using TailwindCSS.
+- Fluid transitions and adaptive layout ensure a smooth experience on all screen sizes.
+
+---
+
+## 🚀 Tech Stack
+
+- **React.js** – Frontend framework
+- **TailwindCSS** – Utility-first CSS framework for styling
+- **Vercel** – Deployment platform
+
+---
+
+## 🛠 Getting Started
+
+```bash
+# Clone the repo
+git clone https://github.com/your-username/beyond-chats.git
+cd beyond-chats
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
