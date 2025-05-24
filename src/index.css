@@ -117,9 +117,10 @@ body {
 
   /* Adjust chat window for mobile */
   .chat-window {
-    height: calc(100vh - 56px - 60px); /* Subtract header and input box height */
+    height: calc(100vh - 56px - 60px - 15px); /* Subtract header, input box height, and 15px shift */
     overflow-y: auto;
     width: 100%;
+    margin-top: -15px; /* Shift up by 15px */
   }
 
   /* Adjust right panel for mobile */
@@ -127,13 +128,14 @@ body {
     height: 100%; /* Subtract header and input box height */
     overflow-y: auto;
     width: 100%;
+    margin-top: -15px; /* Shift up by 15px */
   }
 
   /* Ensure input boxes are fully visible */
   .chat-input-container,
   .chat-input-box {
     position: fixed;
-    bottom: 50px; /* was 0, now shifted up by 32px */
+    bottom: 65px; /* was 50px, now shifted up by 15px */
     left: 0;
     right: 0;
     margin: 0;
